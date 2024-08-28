@@ -180,14 +180,14 @@ class BTree:
                 i += 1
             return self.recherche(key, act_node.children[i])
 
-    def linearise(self, start_node = None):
+    def print_Tree(self, start_node = None):
         if start_node == None:
             start_node = self.root
         if start_node.leaf:
-            return str(start_node.keys)
+            return "F" + str(start_node.keys)
         else:
-            children = ', '.join(self.linearise(child) for child in start_node.children)
-            return f'[{start_node.keys} [{children}]]'
+            children = ', '.join(self.print_Tree(child) for child in start_node.children)
+            return f'[B{start_node.keys} [{children}]]'
         
     def height(self,node):
         return 1+max([self.height(child) for child in node.children]or [0])

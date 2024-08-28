@@ -15,20 +15,20 @@ t.insertion(7)
 t.insertion(9)
 t.insertion(10)
 
-print("Arbre final : ", t.linearise())
+print("Arbre final : ", t.print_Tree())
 
 t.suppression(10)
-print("suppression 10 : ", t.linearise())
+print("suppression 10 : ", t.print_Tree())
 
 t.suppression(3)
-print("suppression 3 : ",t.linearise())
+print("suppression 3 : ",t.print_Tree())
 
 t.suppression(8)
-print("suppression 8 : ",t.linearise())
+print("suppression 8 : ",t.print_Tree())
 
 t.suppression(6)
-print("suppression 6 : ",t.linearise())
+print("suppression 6 : ",t.print_Tree())
 
 t.suppression(9)
-print("suppression 9 : ",t.linearise())
+print("suppression 9 : ",t.print_Tree())
 

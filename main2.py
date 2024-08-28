@@ -17,4 +17,4 @@ t.insertion(10)
 
 t.insertion(3)
 
-print(t.linearise())
+print(t.print_Tree())

@@ -26,4 +26,4 @@ print(t.recherche(5))
 print(t.recherche(8))
 print(t.recherche(12))
 
-print(t.linearise())
+print(t.print_Tree())
